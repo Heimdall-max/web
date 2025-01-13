@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+.notif {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid black;
+    z-index: 1;
+}
+
+/*hamburger menu*/
+.hmbgr {
+    width: 55px;
+    height: 50px;
+    margin-right: 550px;
+    margin-top: 8px;
+    position: relative;
+    cursor: pointer;
+    left: 20px;
+    transition: .3s ease;
+}
+
+.hmbgr:hover {
+    background-color: #e0e0e0;
+    border-radius: 1rem;
+}
+
+.hmbgr.active {
+    background-color: #e0e0e0;
+    border-radius: 1rem;
+}
+
+.hmbgr span {
+    height: 5px;
+    width: 40px;
+    background-color: black;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.hmbgr span:nth-child(1) {
+    top: 30%;
+}
+
+.hmbgr span:nth-child(3) {
+    top: 70%;
+}
+
+.hmbgr.active span:nth-child(1) {
+    top: 20px;
+    transform: translate(-50%, 50%) rotate(-45deg);
+}
+
+.hmbgr.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hmbgr.active span:nth-child(3) {
+    top: 40%;
+    transform: translate(-50%, 50%) rotate(45deg);
+}
+
+/* sidebar*/
+.side {
+    width: 500px;
+    top: 11.5%;
+    height: 100vh;
+    position: fixed;
+    background-color: #ededed;
+    left: -550px;
+    transition: .3s ease;
+    z-index: 1;
+}
+
+.side.active {
+    left: 0;
+}
+
+.side-ul {
+    list-style-type: none;
+    padding: 0px;
+    align-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.side-ul a {
+    text-decoration: none;
+    font-family: 'Lucida sans';
+    font-weight: 500;
+    color: black;
+}
+
+.side-ul a:hover {
+    color: #0000ff;
+    transition: .5s ease;
+}
+
+.side-li {
+    height: 50px;
+    padding-top: 30px;
+    margin-top: 1px;
+    border-bottom: 1px solid gray;
+}
+
+.side-li:hover {
+    background-color: aliceblue;
+}
+
+.side-li a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-family: 'Lucida sans';
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+/*logo*/
+.header {
+    margin-right: auto;
+}
+
+.header a img {
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+}
+
+/*(REAL MADRID)*/
+.nama {
+    color: black;
+    font-family: 'lucida sans';
+    align-items: center;
+    margin-right: 10px;
+}
+
+.nama:hover {
+    color: #0000ff;
+    transition: 1s ease-in-out;
+}
+
+/* tombol login*/
+.login {
+    padding: 30px;
+    font-family: 'lucida sans';
+    color: black;
+    justify-items: center;
+    transition: 1s ease;
+}
+
+.login:hover {
+    scale: 1.05;
+}
+
+.login a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida sans';
+    border: 1.5px solid black;
+    padding: 10px;
+    transition: 0.7s ease;
+}
+
+.login a:hover {
+    font-weight: 450;
+    color: #0000ff;
+}
+
+/*isi*/
+.isi {
+    width: 100%;
+    height: 750px;
+}
+
+.isi::before {
+    content: '';
+    background-image: url("back.jpg");
+    position: fixed;
+    opacity: 0.10;
+    inset: 0;
+    margin-top: 150px;
+}
+
+.legenda {
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 60px;
+}
+
+.legenda h1 {
+    margin-left: 10px;
+}
+
+.x {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.karir {
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+
+.bio {
+    font-family: 'Lucida sans';
+    margin: 5px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.bio ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.foto img {
+    width: 500px;
+    height: 530px;
+    margin-left: 50px;
+    border-radius: 2rem;
+    background-image: linear-gradient(to top, cyan, lightgray);
+    margin-top: 35px;
+    isolation: isolate;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    margin-top: 20px;
+    display: flex;
+    border-top: 2px solid black;
+    isolation: isolate;
+}
+
+.foot {
+    background-color: #ededed;
+    align-content: center;
+    flex: 1;
+}
+
+.foot img {
+    width: 3%;
+    height: auto;
+    align-items: center;
+}
+
+.sm {
+    background-color: #ededed;
+    font-family: 'Lucida sans';
+    font-weight: 500;
+}
+
+.sm a img {
+    width: 10%;
+}
